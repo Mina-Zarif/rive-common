@@ -286,3 +286,14 @@ class Mat2D {
     return _buffer.toString();
   }
 }
+
+extension Mat2DToFloat64List on Mat2D {
+  Float64List toFloat64List() {
+    return Float64List.fromList([
+      xx, yx, 0, 0,
+      xy, yy, 0, 0,
+      tx, ty, 1, 0,
+      0,  0,  0, 1,
+    ]);
+  }
+}
