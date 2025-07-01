@@ -57,7 +57,7 @@ android {
 }
 
 def ndkVersionFromLocalProperties() {
-    return project.hasProperty('rive.ndk.version') ? project.getProperty('rive.ndk.version') : "25.1.8937393"
+    return project.hasProperty('rive.ndk.version') ? project.getProperty('rive.ndk.version') : "26.1.10909125"
 }
 
 
